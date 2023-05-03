@@ -2,7 +2,7 @@ import pickle
 import streamlit as st
 
 model_perokok = pickle.load(open('perokok-model.sav', 'rb'))
-st.title('Prediksi Perokok Aktif Menggunakan Algoritma Logistic Regression')
+st.title('Prediksi Perokok Aktif Menggunakan Algoritma Naive Bayes')
 
 gender = st.text_input("Jenis Kelamin (0=Perempuan 1=Laki Laki)")
 age = st.text_input("Umur")
